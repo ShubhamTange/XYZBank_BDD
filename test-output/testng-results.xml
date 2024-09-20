@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-15T13:44:53 IST" name="Suite" finished-at="2024-09-15T13:46:35 IST" duration-ms="102279">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-09-15T13:44:53 IST" name="Test" finished-at="2024-09-15T13:46:35 IST" duration-ms="102279">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:44:53 IST" name="setUpClass" finished-at="2024-09-15T13:44:54 IST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@782fd504]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:44:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:03 IST" duration-ms="69263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the deposit functionality with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Deposit Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:07 IST" duration-ms="4358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the deposit functionality with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Deposit Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:11 IST" duration-ms="3703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the deposit functionality with invalid data adding negative deposit money"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Deposit Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:14 IST" duration-ms="3195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the deposit functionality with invalid data adding zero deposit money"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Deposit Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:19 IST" duration-ms="4887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Validate login functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:23 IST" duration-ms="3696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the Withdraw functionality with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Withdraw Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:26 IST" duration-ms="3245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the Withdraw functionality with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Withdraw Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:30 IST" duration-ms="3587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the withdraw functionality with invalid data withdraw negative money"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Withdraw Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:33 IST" duration-ms="3079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the withdraw functionality with withdraw 0 amount"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Withdraw Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-15T13:46:35 IST" duration-ms="2481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating the withdraw functionality with invalid data with withdraw money more than balance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Withdraw Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@606e4010]" started-at="2024-09-15T13:46:35 IST" name="tearDownClass" finished-at="2024-09-15T13:46:35 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
