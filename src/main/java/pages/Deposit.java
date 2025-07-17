@@ -31,7 +31,7 @@ public class Deposit extends TestBase {
 	static int balanceAfterDeposit;
 	
 	private Login user;
-	static Map<String, List<Transaction>> depositHistory = new HashMap<>();
+	static Map<String, List<Transaction>> depositHistory = new HashMap<String, List<Transaction>>();
 	
 	class Transaction{
 		String date;
@@ -190,7 +190,7 @@ public class Deposit extends TestBase {
 	}
 	
 	public void addInfoToTransaction(String accNum, String amount, String date, String transactionType) {
-		List<Transaction> depositTransaction = new ArrayList<>();
+		List<Transaction> depositTransaction = new ArrayList<Transaction>();
 		accNum ="2002";
 		date = "05/6/2024";
 		amount = "5618";
