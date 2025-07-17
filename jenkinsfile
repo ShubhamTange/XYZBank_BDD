@@ -45,17 +45,14 @@ pipeline {
         stage('Result') {
             steps {
                 echo 'Publishing TestNG Results...'
-                junit '**/test-output/testng-results.xml' // Default TestNG XML output
-                // For Allure, if configured in pom.xml and test framework:
-                // allure includeProperties: false, results: [[path: 'target/allure-results']]
+                junit 'target/surefire-reports/testng-results.xml'
             }
-        }
     }
 
     post {
         always {
             echo 'Cleaning up workspace...'
-            cleanWs()
+            
         }
         failure {
             echo 'Build failed. Check the logs for more details.'
