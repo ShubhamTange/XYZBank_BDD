@@ -22,14 +22,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running Maven Clean and Compile...'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Executing BDD Cucumber TestNG Tests...'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
