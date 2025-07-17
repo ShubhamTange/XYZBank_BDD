@@ -47,6 +47,7 @@ pipeline {
                 echo 'Publishing TestNG Results...'
                 junit 'target/surefire-reports/testng-results.xml'
             }
+        }
     }
 
     post {
