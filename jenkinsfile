@@ -1,0 +1,67 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven_3.8.6' // Replace with your configured Maven version
+        jdk 'JDK_17'        // Replace with your configured JDK version
+    }
+
+    environment {
+        MAVEN_OPTS = "-Dmaven.test.failure.ignore=false"
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                echo 'Checking out source code...'
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Running Maven Clean and Compile...'
+                sh 'mvn clean compile'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Executing BDD Cucumber TestNG Tests...'
+                sh 'mvn test'
+            }
+        }
+
+        stage('Success') {
+            when {
+                expression { currentBuild.result == null || currentBuild.result == 'SUCCESS' }
+            }
+            steps {
+                echo 'Build and Tests succeeded.'
+            }
+        }
+
+        stage('Result') {
+            steps {
+                echo 'Publishing TestNG Results...'
+                junit '**/test-output/testng-results.xml' // Default TestNG XML output
+                // For Allure, if configured in pom.xml and test framework:
+                // allure includeProperties: false, results: [[path: 'target/allure-results']]
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Cleaning up workspace...'
+            cleanWs()
+        }
+        failure {
+            echo 'Build failed. Check the logs for more details.'
+        }
+        success {
+            echo 'Pipeline completed successfully.'
+        }
+    }
+}
