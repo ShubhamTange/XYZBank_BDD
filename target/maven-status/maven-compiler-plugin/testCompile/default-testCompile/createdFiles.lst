@@ -1,0 +1,5 @@
+stepdefinations\LoginTC.class
+stepdefinations\WithdrawTC.class
+runner\TestRunner.class
+stepdefinations\DepositTC.class
+stepdefinations\TransactionsTC.class

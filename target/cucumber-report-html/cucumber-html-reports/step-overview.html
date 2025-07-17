@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>CucumberWebGui</td>
+                          <td>1</td>
+                        <td>17 Jul 2025, 13:53</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.click_on_depositSubmit()</td>
+                <td>2</td>
+                <td class="duration" data-value="518180800">518ms</td>
+                <td class="duration" data-value="259090400">259ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.click_on_negative_deposit_submit()</td>
+                <td>1</td>
+                <td class="duration" data-value="551749400">551ms</td>
+                <td class="duration" data-value="551749400">551ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.click_on_zero_deposit_submit()</td>
+                <td>1</td>
+                <td class="duration" data-value="586709300">586ms</td>
+                <td class="duration" data-value="586709300">586ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.deposit_successful_message_deposit_successful_should_be_displayed()</td>
+                <td>2</td>
+                <td class="duration" data-value="782136100">782ms</td>
+                <td class="duration" data-value="391068050">391ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.enter_the_amount_to_be_deposited_into_the_account(java.lang.Integer)</td>
+                <td>4</td>
+                <td class="duration" data-value="458173200">458ms</td>
+                <td class="duration" data-value="114543300">114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.init()</td>
+                <td>12</td>
+                <td class="duration" data-value="10669032000">10s 669ms</td>
+                <td class="duration" data-value="889086000">889ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.should_be_able_to_view_features_like_deposit_withdraw_accounts()</td>
+                <td>11</td>
+                <td class="duration" data-value="1374417700">1s 374ms</td>
+                <td class="duration" data-value="124947063">124ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.user_clicks_on_depositOption()</td>
+                <td>4</td>
+                <td class="duration" data-value="1117951900">1s 117ms</td>
+                <td class="duration" data-value="279487975">279ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.user_selects_the_account(java.lang.Integer)</td>
+                <td>11</td>
+                <td class="duration" data-value="24480289600">24s 480ms</td>
+                <td class="duration" data-value="2225480872">2s 225ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.user_should_be_logged_in_the_banking_system()</td>
+                <td>11</td>
+                <td class="duration" data-value="1863641700">1s 863ms</td>
+                <td class="duration" data-value="169421972">169ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.validate_balance_updated_properly(java.lang.Integer)</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.DepositTC.validating_amount_to_be_deposited_input_text_box_should_be_displayed()</td>
+                <td>4</td>
+                <td class="duration" data-value="115434700">115ms</td>
+                <td class="duration" data-value="28858675">028ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.LoginTC.after_login_validate_welcome_message_account_number_and_balance()</td>
+                <td>1</td>
+                <td class="duration" data-value="234825200">234ms</td>
+                <td class="duration" data-value="234825200">234ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.LoginTC.init()</td>
+                <td>12</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.LoginTC.user_is_on_xyz_bank_url()</td>
+                <td>1</td>
+                <td class="duration" data-value="20670600">020ms</td>
+                <td class="duration" data-value="20670600">020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.LoginTC.user_needs_to_click_on_login_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="139776000">139ms</td>
+                <td class="duration" data-value="139776000">139ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.LoginTC.user_needs_to_select_customer_name_from_dropdown()</td>
+                <td>1</td>
+                <td class="duration" data-value="2226677000">2s 226ms</td>
+                <td class="duration" data-value="2226677000">2s 226ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.LoginTC.user_selects_customer_login()</td>
+                <td>1</td>
+                <td class="duration" data-value="137810700">137ms</td>
+                <td class="duration" data-value="137810700">137ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.LoginTC.validate_the_url()</td>
+                <td>1</td>
+                <td class="duration" data-value="2011471600">2s 011ms</td>
+                <td class="duration" data-value="2011471600">2s 011ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.TransactionsTC.user_clicks_on_transactions_option()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.TransactionsTC.validate_the_table_details_needs_to_add_map_to_validate_the_details()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.TransactionsTC.validate_the_transaction_page_and_validate_the_url()</td>
+                <td>2</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.click_on_money_more_than_balance_tobe_withdrawn()</td>
+                <td>1</td>
+                <td class="duration" data-value="158171400">158ms</td>
+                <td class="duration" data-value="158171400">158ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.click_on_negative_moneywithdraw_btn()</td>
+                <td>1</td>
+                <td class="duration" data-value="559405600">559ms</td>
+                <td class="duration" data-value="559405600">559ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.click_on_withdraw_btn()</td>
+                <td>2</td>
+                <td class="duration" data-value="366789900">366ms</td>
+                <td class="duration" data-value="183394950">183ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.click_on_zero_moneywithdraw_btn()</td>
+                <td>1</td>
+                <td class="duration" data-value="2617483900">2s 617ms</td>
+                <td class="duration" data-value="2617483900">2s 617ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.enter_the_amount_to_be_withraw_from_the_account(java.lang.Integer)</td>
+                <td>5</td>
+                <td class="duration" data-value="416489800">416ms</td>
+                <td class="duration" data-value="83297960">083ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.user_clicks_on_with_draw_option()</td>
+                <td>5</td>
+                <td class="duration" data-value="2865583100">2s 865ms</td>
+                <td class="duration" data-value="573116620">573ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.validate_balance_updated_properly_after_withdraw_money(java.lang.Integer)</td>
+                <td>2</td>
+                <td class="duration" data-value="67451000">067ms</td>
+                <td class="duration" data-value="33725500">033ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.validating_amount_to_be_withdraw_input_text_box_should_be_displayed()</td>
+                <td>5</td>
+                <td class="duration" data-value="190224300">190ms</td>
+                <td class="duration" data-value="38044860">038ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepdefinations.WithdrawTC.withdraw_successful_message_Transaction_successful_should_be_displayed()</td>
+                <td>2</td>
+                <td class="duration" data-value="59628200">059ms</td>
+                <td class="duration" data-value="29814100">029ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>31</td>
+              <td>113</td>
+              <td class="duration">54s 590ms</td>
+              <td class="duration">483ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

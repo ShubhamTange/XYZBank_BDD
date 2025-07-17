@@ -1,0 +1,6 @@
+pages\Transactions.class
+base\TestBase.class
+pages\Withdraw.class
+pages\Deposit.class
+pages\Deposit$Transaction.class
+pages\Login.class

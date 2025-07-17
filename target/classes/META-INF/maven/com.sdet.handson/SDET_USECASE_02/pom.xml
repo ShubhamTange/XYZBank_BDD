@@ -39,12 +39,23 @@
 	
 	<build>
         <plugins>
+        	<plugin>
+		      <groupId>org.apache.maven.plugins</groupId>
+		      <artifactId>maven-compiler-plugin</artifactId>
+		      <version>3.10.1</version> <!-- Use latest version -->
+		      <configuration>
+		        <source>17</source>       <!-- or 11, depending on your JDK -->
+		        <target>17</target>
+		      </configuration>
+		    </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <suiteXmlFiles>
+			          <suiteXmlFile>testng.xml</suiteXmlFile>
+			        </suiteXmlFiles>
                 </configuration>
             </plugin>
             <plugin>
